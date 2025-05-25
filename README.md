@@ -35,7 +35,8 @@ Run the server executable:
 ## Test your server
 - Open browser → go to http://localhost:8080/
 - Test POST request (CGI) with curl:
-  ```bash
+  
+```bash
   curl -d "name=Riya&field=Electronics" -X POST http://localhost:8080/cgi-bin/demo
 ```
   You should see a response like:
