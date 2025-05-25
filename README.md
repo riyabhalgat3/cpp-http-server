@@ -40,6 +40,11 @@ Run the server executable:
   curl -d "name=Riya&field=Electronics" -X POST http://localhost:8080/cgi-bin/demo
 ```
   You should see a response like:
+  
+```bash
   CGI response with input: name=Riya&field=Electronics
+```
+<img width="350" alt="Screenshot 2025-05-25 at 1 44 42 PM" src="https://github.com/user-attachments/assets/44fb89f6-94b0-4a18-bb41-5025e88738eb" />
+  
 
 
