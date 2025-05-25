@@ -1,27 +1,44 @@
-# C++ HTTP Server
+# Personal HTTP Server in Modern C++
 
-A simple multi-threaded HTTP server in C++ supporting GET and POST requests, CGI, and concurrency.
+Welcome to my personal HTTP Server project, built with modern C++17, featuring concurrency, asynchronous I/O, CGI support, and simple HTTP routing.
 
 ## Features
 
-- Basic HTTP/1.1 server
-- Supports GET and POST requests
-- Handles simple CGI POST input
-- Multi-threaded request handling
-- Written using standard C++17 and POSIX sockets
+- Handles HTTP GET and POST requests
+- Simple CGI support to handle POST data
+- Serves static HTML content
+- Lightweight and easy to extend
+- Written using low-level POSIX sockets
 
-## How to Build and Run
+## Getting Started
+
+### Prerequisites
+
+- A C++17 compatible compiler (e.g., g++ 7+)
+- Linux or macOS environment (POSIX sockets)
+
+### Building
+
+Clone the repo and run:
 
 ```bash
 g++ -std=c++17 -pthread main.cpp server.cpp -o server
-./server
 
-Navigate to http://localhost:8080 in your browser.
+```
+## Running
 
-
-Add, commit, and push:
+Run the server executable:
 
 ```bash
-git add README.md
-git commit -m "Add README with project description"
-git push
+./server
+```
+##Test your server
+- Open browser → go to http://localhost:8080/
+- Test POST request (CGI) with curl:
+  ```bash
+  curl -d "name=Riya&field=Electronics" -X POST http://localhost:8080/cgi-bin/demo
+```
+You should see a response like:
+CGI response with input: name=Riya&field=Electronics
+
+
