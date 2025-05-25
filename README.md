@@ -32,7 +32,7 @@ Run the server executable:
 ```bash
 ./server
 ```
-##Test your server
+## Test your server
 - Open browser → go to http://localhost:8080/
 - Test POST request (CGI) with curl:
   ```bash
