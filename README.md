@@ -38,7 +38,7 @@ Run the server executable:
   ```bash
   curl -d "name=Riya&field=Electronics" -X POST http://localhost:8080/cgi-bin/demo
 ```
-You should see a response like:
-CGI response with input: name=Riya&field=Electronics
+  You should see a response like:
+  CGI response with input: name=Riya&field=Electronics
 
 
